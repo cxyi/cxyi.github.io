@@ -1,19 +1,181 @@
-/* comments look like this in CSS files */
-
-#navbar {
-  background-color: #000000; /* black */
-  color: #ffffff;            /* white */
-  margin: 0;
-  padding: 0.5em 0; /* 0.5em padding on top/bottom, 0 padding on left/right */
+@font-face {
+    font-family: 'Liberator'
+    src: url('https://dl.dropboxusercontent.com/u/12300194/Liberator.otf'); /*URL to font*/
 }
 
-#navbar a {
-  margin: 0;
-  padding: 0.5em;
-  color: #ffffff;
-  text-decoration: none;
+body {
+	background-color: #343434; /* dark gray ish? */
+	background-image: url(https://dl.dropboxusercontent.com/u/12300194/black_lozenge.png);
+	left: 0;
+	margin-top: -1%;
+	overflow: hidden;
+	position: relative;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 16px;
 }
 
+p {
+	font-size: 1em;
+	color: black;
+	text-align: justify;
+	margin-top: 0;
+}
+
+
+img.abtme-menu {
+	cursor: pointer;
+	position: absolute;
+	z-index: 2;
+	left: 18%;
+	margin-top: 7%;
+	opacity: 1;
+	}
+	
+img.banner {
+	display:block;
+	z-index: 2;
+	margin-left: 45%;
+	opacity: 1;
+	margin-bottom: -13%;
+	margin-top: 1%;
+	}	
+div.roundedcorners {
+	display: block;
+	background-color: #979797;
+	border-radius: 25px;
+	margin-right: 20%;
+	margin-left: 20%;
+	margin-top: 13%;
+	margin-bottom: 10%;
+	padding: 2em;
+	height: 20em;
+	width: 60%;
+}
+
+div.text {
+	overflow-y: auto;
+	overflow-x: hidden;
+	margin-top: -1%;
+	margin-left: 1%;
+	margin-right: 5%;
+	padding-left: 0.35em;
+	padding-right: 0.35em;
+	height: 100%;
+	width: 100%;
+	}
+
+div.menu {
+	background-color: #2f2f2f;
+	position: fixed;
+	left: -19%;
+	height: 101%;
+	width: 19%;
+	}
+
+div.menu p {
+	color: white;
+	padding: 1em;
+	overflow-y: auto;
+	overflow-x: hidden;
+	}
+
+img.centered {
+	display: block;
+	margin-top: 5em;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	margin-left: 15%;
+	margin-right: auto;
+	size: 15pt;
+	color: white;
+	}
+
+	
+.hide {
+	display: none;
+	}
+	
+div.nav-menu {
+	padding: 0.5em;
+	display: block;
+	position: absolute;
+	top: 43%;
+	left: 21%;
+	text-align: right;
+	margin-top: 22em;
+	color: #343434;
+	font-size: 10pt;
+	font-family: 'Liberator';
+	font-weight: 300;
+	height: 12pt;
+	width: 60%;
+	letter-spacing: 2pt;
+	}
+
+	div.contact {
+		padding-left: 12%;
+		padding-top: 5%;
+		}
+		
+a {
+	color: white;
+	text-decoration: none;
+	-o-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+	-khtml-transition: color 0.3s linear;
+	-webkit-transition: color 0.3s linear;
+	-ms-transition: color 0.3s linear;
+	transition: color 0.3s linear;
+	}
+
+	a.bodylink:hover {
+		color: #F2203E;
+		}
+		
+a.profile {
+	background-color: #2864DF; /* blue ish */
+	padding: 3pt;
+	width: 155px;
+	margin-right: 1.5em;
+	}
+
+a.projects {
+	background-color: #87DF28; /* green ish */
+	padding: 3pt;
+	width: 155px;
+	}
+	
+a.contact {
+	background-color: #F2203E; /* red ish */
+	padding: 3pt;
+	width: 155px;
+	margin-left: 1.5em;
+	}
+
+.selected {
+	border: 2pt solid white;
+	}
+
+img.proj {
+	display: inline;
+	float: left;
+	margin-right: 2em;
+	margin-left: 2em;
+	}
+
+h2 {
+	margin-left: 5%;
+	color: white;
+	}
+	
+#abt {
+	font-size: 10pt;
+	padding: 2em
+	}
 main {
   padding: 0.5em;
 }
